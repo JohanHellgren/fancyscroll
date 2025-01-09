@@ -1,0 +1,72 @@
+{
+  "scrollyItems": [
+    {
+      "id": 1,
+      "header": "Sustainable Cities",
+      "subheader": "Building tomorrow's urban landscapes",
+      "images": [
+        {
+          "imageUrl": "https://placehold.co/600x400",
+          "altText": "Sustainable city with vertical gardens",
+          "caption": "Modern eco-friendly architecture in Singapore"
+        },
+        {
+          "imageUrl": "https://placehold.co/600x400",
+          "altText": "Sustainable city with vertical gardens",
+          "caption": "Modern eco-friendly architecture in Singapore"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "header": "Ocean Conservation",
+      "subheader": "Protecting marine ecosystems",
+      "images": [
+        {
+          "imageUrl": "https://placehold.co/600x400",
+          "altText": "Coral reef restoration project",
+          "caption": "Marine biologists working on coral preservation"
+        },
+        {
+          "imageUrl": "https://placehold.co/600x400",
+          "altText": "Coral reef restoration project",
+          "caption": "Marine biologists working on coral preservation"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "header": "Renewable Energy",
+      "subheader": "Powering a cleaner future",
+      "images": [
+        {
+          "imageUrl": "https://placehold.co/600x400",
+          "altText": "Solar panel array",
+          "caption": "Large-scale solar installation in the desert"
+        },
+        {
+          "imageUrl": "https://placehold.co/600x400",
+          "altText": "Sustainable city with vertical gardens",
+          "caption": "Modern eco-friendly architecture in Singapore"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "header": "Forest Restoration",
+      "subheader": "Rebuilding our natural heritage",
+      "images": [
+        {
+          "imageUrl": "https://placehold.co/600x400",
+          "altText": "Reforestation project",
+          "caption": "Volunteers planting new trees in the Amazon"
+        },
+        {
+          "imageUrl": "https://placehold.co/600x400",
+          "altText": "Sustainable city with vertical gardens",
+          "caption": "Modern eco-friendly architecture in Singapore"
+        }
+      ]
+    }
+  ]
+}
