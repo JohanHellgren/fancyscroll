@@ -30,7 +30,6 @@ function App() {
   return (
     <>
       <div>
-        <h1>Fancyscroll</h1>
         <Scrollyteller scrollyItems={scrollyItems} />
       </div>
     </>
