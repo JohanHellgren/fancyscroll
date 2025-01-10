@@ -6,12 +6,22 @@
       "subheader": "Building tomorrow's urban landscapes",
       "images": [
         {
-          "imageUrl": "https://placehold.co/600x400",
+          "imageUrl": "https://placehold.co/800x600",
           "altText": "Sustainable city with vertical gardens",
           "caption": "Modern eco-friendly architecture in Singapore"
         },
         {
-          "imageUrl": "https://placehold.co/600x400",
+          "imageUrl": "https://placehold.co/800x600",
+          "altText": "Sustainable city with vertical gardens",
+          "caption": "Modern eco-friendly architecture in Singapore"
+        },
+        {
+          "imageUrl": "https://placehold.co/800x600",
+          "altText": "Sustainable city with vertical gardens",
+          "caption": "Modern eco-friendly architecture in Singapore"
+        },
+        {
+          "imageUrl": "https://placehold.co/800x600",
           "altText": "Sustainable city with vertical gardens",
           "caption": "Modern eco-friendly architecture in Singapore"
         }
@@ -23,15 +33,26 @@
       "subheader": "Protecting marine ecosystems",
       "images": [
         {
-          "imageUrl": "https://placehold.co/600x400",
+          "imageUrl": "https://placehold.co/800x600",
           "altText": "Coral reef restoration project",
           "caption": "Marine biologists working on coral preservation"
         },
         {
-          "imageUrl": "https://placehold.co/600x400",
+          "imageUrl": "https://placehold.co/800x600",
           "altText": "Coral reef restoration project",
           "caption": "Marine biologists working on coral preservation"
+        },
+        {
+          "imageUrl": "https://placehold.co/800x600",
+          "altText": "Sustainable city with vertical gardens",
+          "caption": "Modern eco-friendly architecture in Singapore"
+        },
+        {
+          "imageUrl": "https://placehold.co/800x600",
+          "altText": "Sustainable city with vertical gardens",
+          "caption": "Modern eco-friendly architecture in Singapore"
         }
+
       ]
     },
     {
@@ -40,15 +61,26 @@
       "subheader": "Powering a cleaner future",
       "images": [
         {
-          "imageUrl": "https://placehold.co/600x400",
+          "imageUrl": "https://placehold.co/800x600",
           "altText": "Solar panel array",
           "caption": "Large-scale solar installation in the desert"
         },
         {
-          "imageUrl": "https://placehold.co/600x400",
+          "imageUrl": "https://placehold.co/800x600",
+          "altText": "Sustainable city with vertical gardens",
+          "caption": "Modern eco-friendly architecture in Singapore"
+        },
+        {
+          "imageUrl": "https://placehold.co/800x600",
+          "altText": "Sustainable city with vertical gardens",
+          "caption": "Modern eco-friendly architecture in Singapore"
+        },
+        {
+          "imageUrl": "https://placehold.co/800x600",
           "altText": "Sustainable city with vertical gardens",
           "caption": "Modern eco-friendly architecture in Singapore"
         }
+
       ]
     },
     {
@@ -57,12 +89,12 @@
       "subheader": "Rebuilding our natural heritage",
       "images": [
         {
-          "imageUrl": "https://placehold.co/600x400",
+          "imageUrl": "https://placehold.co/800x600",
           "altText": "Reforestation project",
           "caption": "Volunteers planting new trees in the Amazon"
         },
         {
-          "imageUrl": "https://placehold.co/600x400",
+          "imageUrl": "https://placehold.co/800x600",
           "altText": "Sustainable city with vertical gardens",
           "caption": "Modern eco-friendly architecture in Singapore"
         }

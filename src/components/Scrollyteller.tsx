@@ -6,7 +6,7 @@ export interface ScrollyTellerProps {
 
 const ScrollyTeller = ({scrollyItems}: ScrollyTellerProps) => {
 return (
-    <div className="scrolly-teller">
+    <div className="scrolly-teller scroll-smooth">
         {scrollyItems.map((item) => (
             <ScrollyTellerItem {...item} />
         ))}
