@@ -38,8 +38,8 @@ const ScrollyTellerItem = ({
     if (headerRef.current && subheaderRef.current) {
       const headerHeight = headerRef.current.offsetHeight;
       const subheaderHeight = subheaderRef.current.offsetHeight;
-      setHeaderMargin(headerHeight + 15);
-      setSubheaderMargin(subheaderHeight + 15);
+      setHeaderMargin(subheaderHeight + 15);
+      setSubheaderMargin(headerHeight + 15);
     }
   }, [header, subheader]);
 
