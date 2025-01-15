@@ -32,14 +32,17 @@ const ScrollyTellerItem = ({
   const currentLerpFactor = useRef<number>(0);
   const [smoothScroll, setSmoothScroll] = useState(0);
   const animationFrame = useRef<number>();
+  const margin = 15;
+  const minLerp = 0.05;
+  const maxLerp = 0.5;
 
   useEffect(() => {
     // Set header and subheader margins to prevent them from ever overlapping
     if (headerRef.current && subheaderRef.current) {
       const headerHeight = headerRef.current.offsetHeight;
       const subheaderHeight = subheaderRef.current.offsetHeight;
-      setHeaderMargin(subheaderHeight + 15);
-      setSubheaderMargin(headerHeight + 15);
+      setHeaderMargin(subheaderHeight + margin);
+      setSubheaderMargin(headerHeight + margin);
     }
   }, [header, subheader]);
 
@@ -49,7 +52,7 @@ const ScrollyTellerItem = ({
       const deltaTime = currentTime - startTime.current;
       const scrollAmount = Math.abs(window.scrollY - startScroll.current);
       const scrollSpeed = scrollAmount / deltaTime;
-      const lerpStrength = map(Math.min(scrollSpeed, 1), 0, 1, 0.05, 0.5);
+      const lerpStrength = map(Math.min(scrollSpeed, 1), 0, 1, minLerp, maxLerp);
       currentLerpFactor.current = lerp(currentLerpFactor.current, lerpStrength, 0.1);
       setSmoothScroll((prev) => lerp(prev, window.scrollY, lerpStrength));
       startScroll.current = window.scrollY;
@@ -89,7 +92,7 @@ const ScrollyTellerItem = ({
           </h2>
         </div>
       </div>
-      <div className="w-1/2">
+      <div className="w-1/2" style={{ transform: `translateY(${-(window.scrollY - smoothScroll)}px)` }}>
         {images.map((image) => (
           <ScrollyTellerItemImage key={image.imageUrl} {...image} />
         ))}

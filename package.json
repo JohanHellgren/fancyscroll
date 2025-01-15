@@ -11,6 +11,7 @@
     "mock": "npx json-server --watch db.json --port 3001"
   },
   "dependencies": {
+    "locomotive-scroll": "^5.0.0-beta.21",
     "motion": "^11.16.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
