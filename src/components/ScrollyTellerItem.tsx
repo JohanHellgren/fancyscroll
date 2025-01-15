@@ -71,8 +71,12 @@ const ScrollyTellerItem = ({
         </div>
       </div>
       <div className="w-1/2">
-        {images.map((image) => (
-          <ScrollyTellerItemImage key={image.imageUrl} {...image} />
+        {images.map((image, index) => (
+          <ScrollyTellerItemImage 
+            key={image.imageUrl} 
+            {...image} 
+            index={index}
+          />
         ))}
       </div>
     </div>
