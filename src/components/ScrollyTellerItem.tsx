@@ -22,27 +22,35 @@ const ScrollyTellerItem = ({
   const margin = 15;
   const locomotiveScroll = new LocomotiveScroll({
     lenisOptions: {
-        wrapper: window,
-        content: document.documentElement,
-        lerp: 0.1,
-        duration: 1.2,
-        orientation: 'vertical',
-        gestureOrientation: 'vertical',
-        smoothWheel: true,
-        wheelMultiplier: 1,
-        touchMultiplier: 2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+      wrapper: window,
+      content: document.documentElement,
+      lerp: 0.1,
+      duration: 1.2,
+      orientation: "vertical",
+      gestureOrientation: "vertical",
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      touchMultiplier: 2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
     },
-});
+  });
 
   useEffect(() => {
-    // Set header and subheader margins to prevent them from ever overlapping
-    if (headerRef.current && subheaderRef.current) {
-      const headerHeight = headerRef.current.offsetHeight;
-      const subheaderHeight = subheaderRef.current.offsetHeight;
-      setHeaderMargin(subheaderHeight + margin);
-      setSubheaderMargin(headerHeight + margin);
-    }
+    const handleResize = () => {
+      // Set header and subheader margins to prevent them from ever overlapping
+      if (headerRef.current && subheaderRef.current) {
+        const headerHeight = headerRef.current.offsetHeight;
+        const subheaderHeight = subheaderRef.current.offsetHeight;
+        setHeaderMargin(subheaderHeight + margin);
+        setSubheaderMargin(headerHeight + margin);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, [header, subheader]);
 
   return (
@@ -72,9 +80,9 @@ const ScrollyTellerItem = ({
       </div>
       <div className="w-1/2">
         {images.map((image, index) => (
-          <ScrollyTellerItemImage 
-            key={image.imageUrl} 
-            {...image} 
+          <ScrollyTellerItemImage
+            key={image.imageUrl}
+            {...image}
             index={index}
           />
         ))}

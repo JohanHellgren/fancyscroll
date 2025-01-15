@@ -1,6 +1,6 @@
 import { useEffect,useState } from "react";
 import Scrollyteller from "./components/Scrollyteller";
-import ScrollyTellerItem, { ScrollyTellerItemProps } from "./components/ScrollyTellerItem";
+import { ScrollyTellerItemProps } from "./components/ScrollyTellerItem";
 
 function App() {
 
