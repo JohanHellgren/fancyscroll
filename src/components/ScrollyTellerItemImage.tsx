@@ -15,15 +15,15 @@ const ScrollyTellerItemImage = ({
 }: ScrollyTellerItemImageProps) => {
   return (
     <div
-      className="flex flex-col mb-[24px]"
+      className="scrolly-teller-image"
       data-scroll
       data-scroll-speed={0.01 * (index + 1)}
     >
-      <img src={imageUrl} alt={altText} className="mt-[10px]" />
-      <div className="flex flex-row justify-between mt-[10px]">
-        <h5 className="text-3xl">{caption}</h5>
+      <img src={imageUrl} alt={altText} className="scrolly-teller-image__image" />
+      <div className="scrolly-teller-image__image-text">
+        <h4 className="scrolly-teller-image__caption">{caption}</h4>
         <a>
-          <h5 className="text-2xl">{linkText}</h5>
+          <h5 className="scrolly-teller-image__link-text">{linkText}</h5>
         </a>
       </div>
     </div>
